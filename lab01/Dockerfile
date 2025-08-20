@@ -13,6 +13,6 @@ FROM alpine:latest
 
 WORKDIR /app
 COPY --from=builder /build/userapilab01 ./main
-COPY --from=builder /app/.env .
+COPY --from=builder /build/.env .
 
 CMD ["./main"]
