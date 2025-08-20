@@ -7,8 +7,6 @@ COPY . .
 RUN go mod download
 RUN go build -o ./userapilab01
 
-FROM gcr.op/distroless/base-debian12
-
 FROM alpine:latest
 
 WORKDIR /app
